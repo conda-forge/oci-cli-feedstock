@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - oci ==2.90.0
+    - oci ==2.90.1
     - arrow >=1.0.0
     - certifi
     - click ==7.1.2
@@ -33,7 +33,7 @@ requirements:
     - pytz >=2016.10
     - six >=1.15.0
     - terminaltables ==3.1.0
-    - pyopenssl >=22.1.0
+    - pyopenssl >=17.5.0,<=22.1.0
     - pyyaml >=5.4,<6
     - prompt-toolkit ==3.0.29
 

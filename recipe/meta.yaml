@@ -1,5 +1,5 @@
 {% set name = "oci-cli" %}
-{% set version = "3.22.0" %}
+{% set version = "3.22.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oci-cli-{{ version }}.tar.gz
-  sha256: cbbdea3136ed584dde1fd89b5f437e548f04274da6708b6475c1cd7c300a9c36
+  sha256: 1b08177ed7b4baf58895b6c1536f0567a5dcb13c3bf7754749053ee50773ceb2
 
 build:
   entry_points:
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - oci ==2.90.0
+    - oci ==2.90.1
     - arrow >=1.0.0
     - certifi
     - click ==7.1.2
@@ -33,7 +33,7 @@ requirements:
     - pytz >=2016.10
     - six >=1.15.0
     - terminaltables ==3.1.0
-    - pyopenssl >=22.1.0
+    - pyopenssl >=17.5.0,<=22.1.0
     - pyyaml >=5.4,<6
     - prompt-toolkit ==3.0.29
 

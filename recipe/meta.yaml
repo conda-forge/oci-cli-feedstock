@@ -8,6 +8,7 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oci-cli-{{ version }}.tar.gz
   sha256: 00a7c73d660e12abfc3e24d5239ecae7a206afcc85630693db062c9b4da8fc82
+  # https://github.com/oracle/oci-cli
 
 build:
   entry_points:
@@ -23,11 +24,11 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - oci ==2.90.1
+    - oci ==2.90.2
     - arrow >=1.0.0
     - certifi
     - click ==7.1.2
-    - cryptography >=3.2.1,<=39.0.0
+    - cryptography >=3.2.1,<39.0.0
     - jmespath ==0.10.0
     - python-dateutil >=2.5.3,<3.0.0
     - pytz >=2016.10

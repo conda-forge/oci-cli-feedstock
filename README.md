@@ -1,11 +1,11 @@
-About oci-cli
-=============
+About oci-cli-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oci-cli-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm
 
 Package license: Apache-2.0 OR UPL-1.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oci-cli-feedstock/blob/main/LICENSE.txt)
 
 Summary: Oracle Cloud Infrastructure CLI
 

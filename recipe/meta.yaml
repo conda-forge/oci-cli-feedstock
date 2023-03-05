@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - oci ==2.91.0
+    - oci ==2.93.1
     - arrow >=1.0.0
     - certifi
     - click ==7.1.2

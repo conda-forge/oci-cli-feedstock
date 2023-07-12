@@ -22,20 +22,21 @@ requirements:
   host:
     - python >=3.6
     - pip
+  # https://github.com/oracle/oci-cli/blob/master/setup.py
   run:
     - python >=3.6
-    - oci ==2.104.1
+    - oci ==2.106.0
     - arrow >=1.0.0
     - certifi
     - click ==8.0.4
-    - cryptography >=3.2.1,<40.0.0
+    - cryptography >=3.2.1,<42.0.0
     - jmespath ==0.10.0
     - python-dateutil >=2.5.3,<3.0.0
     - pytz >=2016.10
     - six >=1.15.0
     - terminaltables ==3.1.0
     - pyopenssl >=17.5.0,<24.0.0
-    - pyyaml >=5.4,<6
+    - pyyaml >=5.4,<=6
     - prompt-toolkit ==3.0.29
 
 test:

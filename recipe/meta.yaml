@@ -54,7 +54,7 @@ test:
     - pip
 
 about:
-  home: https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm
+  home: https://github.com/oracle/oci-cli
   summary: Oracle Cloud Infrastructure CLI
   license: Apache-2.0 OR UPL-1.0
   license_file: LICENSE.txt

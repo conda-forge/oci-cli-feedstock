@@ -1,5 +1,5 @@
 {% set name = "oci-cli" %}
-{% set version = "3.33.4" %}
+{% set version = "3.34.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oci-cli-{{ version }}.tar.gz
-  sha256: d781fc690441bea93bea5b590f1cefbbb169191920fbef7c2006659808de876b
+  sha256: 2ef27afa49653324b22f232d4330f52d54f30a03195ad2bda1603194194994cd
   # https://github.com/oracle/oci-cli
 
 build:
@@ -25,7 +25,7 @@ requirements:
   # https://github.com/oracle/oci-cli/blob/master/setup.py
   run:
     - python >=3.6
-    - oci ==2.112.4
+    - oci ==2.113.0
     - arrow >=1.0.0
     - certifi
     - click ==8.0.4
@@ -54,7 +54,7 @@ test:
     - pip
 
 about:
-  home: https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm
+  home: https://github.com/oracle/oci-cli
   summary: Oracle Cloud Infrastructure CLI
   license: Apache-2.0 OR UPL-1.0
   license_file: LICENSE.txt

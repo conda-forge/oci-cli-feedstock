@@ -1,5 +1,5 @@
 {% set name = "oci-cli" %}
-{% set version = "3.41.0" %}
+{% set version = "3.43.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oci-cli-{{ version }}.tar.gz
-  sha256: 5068952a1ed33574b1416ced08c3bb87cb61a7487a239d661f93a0d9280f7279
+  sha256: 590b538f4292f53b8fa9b07fe3e192dfef7f054bfbe9ce88afeb84e4050c9f3d
   # https://github.com/oracle/oci-cli
 
 build:
@@ -25,22 +25,23 @@ requirements:
   # https://github.com/oracle/oci-cli/blob/master/setup.py
   run:
     - python >=3.7
-    - oci ==2.126.4
+    - oci ==2.128.1
     - arrow >=1.0.0
     - certifi
     - click ==8.0.4
-    - cryptography >=3.2.1,<42.0.0
+    - cryptography >=3.2.1,<43.0.0
     - jmespath ==0.10.0
     - python-dateutil >=2.5.3,<3.0.0
     - pytz >=2016.10
     - six >=1.15.0
     - terminaltables ==3.1.10
-    - pyopenssl >=17.5.0,<24.0.0
+    - pyopenssl >=17.5.0,<25.0.0
     - pyyaml >=5.4,<=6.0.1
     - prompt-toolkit >=3.0.38,<=3.0.43
 
 test:
   imports:
+    - alloy
     - common_util
     - interactive
     - oci_cli
@@ -56,7 +57,7 @@ test:
 about:
   home: https://github.com/oracle/oci-cli
   summary: Oracle Cloud Infrastructure CLI
-  license: Apache-2.0 OR UPL-1.0
+  license: Apache-2.0 AND UPL-1.0
   license_file: LICENSE.txt
 
 extra:

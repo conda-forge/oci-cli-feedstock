@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oci-cli-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oci-cli-{{ version }}.tar.gz
   sha256: 9fa3216a14d1203b3c7c70b0e72521f99b9a318ec96ae609c5787e0a665b26cb
   # https://github.com/oracle/oci-cli
 

@@ -1,5 +1,5 @@
 {% set name = "oci-cli" %}
-{% set version = "3.50.0" %}
+{% set version = "3.50.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oci-cli-{{ version }}.tar.gz
-  sha256: 9fa3216a14d1203b3c7c70b0e72521f99b9a318ec96ae609c5787e0a665b26cb
+  sha256: 3eb5a29f76eb1aaca7d894db0b759265a57a724ad6fa4db28e96dd7a27c1ed19
   # https://github.com/oracle/oci-cli
 
 build:
@@ -20,13 +20,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools >70.0.0
   # https://github.com/oracle/oci-cli/blob/master/setup.py
   run:
-    - python >=3.7
-    - oci ==2.138.0
+    - python >={{ python_min }}
+    - oci ==2.138.1
     - arrow >=1.0.0
     - certifi
     - click ==8.0.4
@@ -54,6 +54,7 @@ test:
     # - create_backup_from_onprem --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/oracle/oci-cli

@@ -20,12 +20,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools >70.0.0
   # https://github.com/oracle/oci-cli/blob/master/setup.py
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - oci ==2.138.1
     - arrow >=1.0.0
     - certifi
@@ -54,6 +54,7 @@ test:
     # - create_backup_from_onprem --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/oracle/oci-cli

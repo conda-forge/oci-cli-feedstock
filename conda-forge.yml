@@ -8,3 +8,4 @@ bot:
   inspection: update-grayskull
   # Tightly coupled to oci version
   check_solvable: true
+  automerge: true

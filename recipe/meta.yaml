@@ -1,5 +1,5 @@
 {% set name = "oci-cli" %}
-{% set version = "3.61.0" %}
+{% set version = "3.62.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 1a34151f1dd3f506889500c6502dd7e0ad7ee02b9faf878f8af5c3a1ea89445d
+  sha256: 419273c6314d5d63e6adaace2cedb8e6f4dd439976ed3b9f8093705a26b0e7de
   # https://github.com/oracle/oci-cli
 
 build:
@@ -26,7 +26,7 @@ requirements:
   # https://github.com/oracle/oci-cli/blob/master/setup.py
   run:
     - python >={{ python_min }}
-    - oci ==2.154.3
+    - oci ==2.155.0
     - arrow >=1.0.0
     - certifi >=2025.1.31
     - click ==8.0.4
